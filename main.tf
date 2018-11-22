@@ -1,10 +1,10 @@
 provider "kubernetes" {}
 
-resource "kubernetes_replication_controller" "example" {
+resource "kubernetes_replication_controller" "example2" {
   depends_on = ["data.external.local_install", "null_resource.local_install"]
 
   metadata {
-    name = "terraform-example"
+    name = "terraform-example2"
 
     labels {
       test = "MyExampleApp2"
