@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
+
+cat <<EOF
+{
+  "run": "yes"
+}
+EOF
+
 exit 0
+
 exec 5>&1 &>/dev/null
 
 #which aws || {
@@ -31,9 +39,3 @@ which aws-iam-authenticator || {
 
 popd
 exec 1>&5
-
-cat <<EOF
-{
-  "run": "yes"
-}
-EOF
