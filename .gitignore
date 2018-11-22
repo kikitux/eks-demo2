@@ -1,0 +1,10 @@
+.terraform/
+.vagrant/
+Vagrantfile
+alvaro.env
+eks-getting-started/
+terraform.tfstate
+terraform.tfstate.backup
+scripts/awscli-bundle/
+scripts/install_terraform.sh
+dep/
