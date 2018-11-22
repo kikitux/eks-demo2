@@ -8,3 +8,4 @@ terraform.tfstate.backup
 scripts/awscli-bundle/
 scripts/install_terraform.sh
 dep/
+loop.sh
