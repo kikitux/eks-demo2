@@ -7,13 +7,13 @@ resource "kubernetes_replication_controller" "example" {
     name = "terraform-example"
 
     labels {
-      test = "MyExampleApp"
+      test = "MyExampleApp2"
     }
   }
 
   spec {
     selector {
-      test = "MyExampleApp"
+      test = "MyExampleApp2"
     }
 
     template {
