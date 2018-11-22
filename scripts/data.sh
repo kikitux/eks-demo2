@@ -6,8 +6,6 @@ cat <<EOF
 }
 EOF
 
-exit 0
-
 exec 5>&1 &>/dev/null
 
 #which aws || {
