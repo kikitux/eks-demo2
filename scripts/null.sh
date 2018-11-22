@@ -2,13 +2,13 @@
 
 pushd /usr/local/bin
 
-which kubectl || {
-  # from https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html#install-kubectl-linux
-  sudo curl -o kubectl.zip -L https://www.dropbox.com/s/0rdkc2wmkhwt25k/kubectl.zip?dl=0
-  sudo unzip kubectl.zip
-  sudo rm kubectl.zip
-  sudo chmod +x kubectl
-}
+#which kubectl || {
+#  # from https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html#install-kubectl-linux
+#  sudo curl -o kubectl.zip -L https://www.dropbox.com/s/0rdkc2wmkhwt25k/kubectl.zip?dl=0
+#  sudo unzip kubectl.zip
+#  sudo rm kubectl.zip
+#  sudo chmod +x kubectl
+#}
 
 which aws-iam-authenticator || {
   # from https://docs.aws.amazon.com/eks/latest/userguide/configure-kubectl.html
@@ -18,12 +18,5 @@ which aws-iam-authenticator || {
   sudo chmod +x aws-iam-authenticator
 }
 
-popd
-
-echo ${PATH}
-
 hash -r
-
-which kubectl aws-iam-authenticator
-ls -al /usr/local/bin
-
+popd
