@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-exec 5>&1 &>/dev/null
-
 #which aws || {
 #  # from https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-bundle.html
 #  curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
@@ -30,5 +28,3 @@ which aws-iam-authenticator || {
 }
 
 popd
-
-exec 1>&5
